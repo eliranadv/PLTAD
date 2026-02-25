@@ -29,13 +29,38 @@
         <a href="#main-form" class="mobile-cta-form">ייעוץ חינם</a>
     </div>
 
+    <!-- ========== TOP BAR ========== -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-info">
+                <span class="top-bar-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    סוקולוב 40, רמת השרון
+                </span>
+                <span class="top-bar-separator"></span>
+                <span class="top-bar-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <a href="tel:0747648302">074-764-8302</a>
+                </span>
+                <span class="top-bar-separator"></span>
+                <span class="top-bar-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <a href="tel:0524554545">052-455-4545</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
     <!-- ========== HEADER ========== -->
     <header class="header">
         <div class="header-inner">
-            <a href="tel:0524554545" class="header-phone">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                052-455-4545
-            </a>
+            <div class="header-cta-group">
+                <a href="tel:0524554545" class="header-phone">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1B365D" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    052-455-4545
+                </a>
+                <a href="#main-form" class="header-consult-btn">ייעוץ חינם</a>
+            </div>
             <img src="images/logo.png" alt="אקוקא-קצב ושות' - משרד עורכי דין" class="header-logo">
         </div>
     </header>
@@ -60,11 +85,18 @@
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B365D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                         <span>ליווי צמוד לאורך כל התהליך</span>
                     </div>
+                    <div class="hero-point">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B365D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>ייעוץ ראשוני חינם</span>
+                    </div>
                 </div>
             </div>
             <div class="hero-form-wrapper">
                 <div class="hero-form-card">
-                    <h2 class="hero-form-title">ייעוץ ראשוני חינם</h2>
+                    <div class="hero-form-partners">
+                        <img src="images/lawyer-1.png" alt="עו&quot;ד לירן אקוקא" class="hero-partner-img">
+                        <img src="images/lawyer-2.png" alt="עו&quot;ד אלירן קצב" class="hero-partner-img">
+                    </div>
                     <p class="hero-form-desc">השאירו פרטים ונחזור אליכם תוך שעה</p>
                     <form class="hero-form" id="heroForm">
                         <input type="text" name="name" placeholder="שם מלא" required class="form-input">
@@ -626,8 +658,27 @@
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-    document.querySelectorAll('.why-card, .process-step, .right-item, .testimonial-card, .partner-card, .faq-item').forEach(el => {
+    // Observe all animated elements
+    document.querySelectorAll(
+        '.why-card, .process-step, .right-item, .testimonial-card, .partner-card, .faq-item, ' +
+        '.trust-item, .section-title, .section-subtitle, .form-info, .form-card, ' +
+        '.final-cta h2, .final-cta p, .final-cta-buttons'
+    ).forEach(el => {
         observer.observe(el);
+    });
+
+    // Add stagger delays to grouped items
+    document.querySelectorAll('.trust-item').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.1) + 's';
+    });
+    document.querySelectorAll('.why-card').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.12) + 's';
+    });
+    document.querySelectorAll('.process-step').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.15) + 's';
+    });
+    document.querySelectorAll('.testimonial-card').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.12) + 's';
     });
     </script>
 </body>
