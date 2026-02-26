@@ -294,6 +294,35 @@ img {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(27,54,93,0.25);
 }
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.header-nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray-700);
+    position: relative;
+    padding: 4px 0;
+    transition: color var(--transition);
+}
+.header-nav-link:hover {
+    color: var(--navy);
+}
+.header-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: var(--navy);
+    transition: width var(--transition);
+}
+.header-nav-link:hover::after {
+    width: 100%;
+}
 
 /* ---------- HERO ---------- */
 .hero {
@@ -1272,7 +1301,8 @@ img {
         bottom: 80px;
     }
     .header-phone,
-    .header-consult-btn {
+    .header-consult-btn,
+    .header-nav {
         display: none;
     }
     .hero {
