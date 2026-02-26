@@ -644,10 +644,16 @@
         })
         .then(response => response.json())
         .then(data => {
-            document.getElementById('formCard').classList.add('submitted');
+            if (data.success === 'true' || data.success === true) {
+                document.getElementById('formCard').classList.add('submitted');
+            } else {
+                alert('אירעה שגיאה בשליחת הטופס. אנא נסו שוב או התקשרו אלינו.');
+                console.error('Form error:', data);
+            }
         })
         .catch(error => {
-            document.getElementById('formCard').classList.add('submitted');
+            alert('אירעה שגיאה בשליחת הטופס. אנא נסו שוב או התקשרו אלינו.');
+            console.error('Form error:', error);
         })
         .finally(() => {
             btn.innerHTML = originalText;
