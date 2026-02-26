@@ -394,6 +394,15 @@ img {
     font-weight: 500;
     color: var(--gray-800);
 }
+.hero-point-highlight {
+    background: linear-gradient(135deg, rgba(27,54,93,0.1) 0%, rgba(44,82,130,0.08) 100%);
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(27,54,93,0.15);
+    font-weight: 600;
+    color: var(--navy);
+    margin-top: 4px;
+}
 
 /* Hero Form Card */
 .hero-form-wrapper {
